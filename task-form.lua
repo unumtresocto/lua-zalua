@@ -1,0 +1,133 @@
+s='';
+for k=1,3 do;
+s=s..(function(i)
+    local j=-1;
+    (function(b)
+        return(function(...)
+            return(function(a)
+                        return(a(a))
+                    end)(function(a)
+                            return(b(function(c)
+                                        return(a(a))(c)
+                                        end))
+            end)(...)
+        end)
+    end)
+        (function(e)return(function(...)local a,c,b=unpack(...);if(#a==c)then;for g=1,c do;local b={};for h=1,c do;if(b[a[h][g]]==true)then;return;else;b[a[h][g]]=true;end;end;end;b(a);else;(function(b)return(function(...)return(function(a)return(a(a))end)(function(a)return(b(function(c)return(a(a))(c)end))end)(...)end)end)(function(c)return(function(...)local b,a=(...)[3]or(function(b)return(function(...)return(function(a)return(a(a))end)(function(a)return(b(function(c)return(a(a))(c)end))end)(...)end)end)(function(c)return(function(b)return(b==0)and{}or{b,unpack(c(b-1))}end)end)((...)[1]),(...)[1];if(0==(...)[1])then(...)[2]({unpack(b)})else;for g=1,(...)[1]do;b[g],b[a]=b[a],b[g];c({(...)[1]-1,(...)[2],b});b[g],b[a]=b[a],b[g];end;end;end)end)({c,function(d)e({{d,unpack(a)},c,b})end})end;end)end)
+            (
+                {
+                    {},
+                    i,
+                    function(k)(
+                        function(a)
+                            return(function(...)
+                                        return(
+                                            function(b)
+                                                return(b(b))
+                                            end)(
+                                                function(b)
+                                                    return(
+                                                        a(function(c)
+                                                            return(b(b))(c)
+                                                        end))
+                                                    end)(...)
+                                    end)
+                    end)
+                        (function(e)
+                            return(function(...)
+                                local b,c,a=unpack(...);
+                                if(#b==c)then;
+                                    for h=1,c do;
+                                        local a={};
+                                        for g=1,c do;
+                                            if(a[b[g][h]]==true)then;
+                                                return;
+                                            else;
+                                                a[b[g][h]]=true;
+                                            end;
+                                        end;
+                                    end;
+                                    a(b);
+                                else;
+                                    (function(a)
+                                        return(function(...)
+                                                    return(function(b)
+                                                                return(b(b))
+                                                            end)(
+                                                                function(b)
+                                                                    return(
+                                                                        a(function(c)
+                                                                            return(b(b))(c)
+                                                                        end))
+                                                                end)(...)
+                                                end)
+                                    end)
+                                        (function(c)
+                                            return(function(...)
+                                                local a,b=(...)[3]or(function(a)
+                                                    return(function(...)
+                                                        return(function(b)
+                                                            return(b(b))
+                                                        end)(function(b)
+                                                            return(a(function(c)
+                                                                return(b(b))(c)
+                                                            end))
+                                                        end)(...)
+                                                    end)
+                                                end)
+                                                    (function(c)
+                                                        return(function(a)
+                                                                    return(a==0)and{}or{a,unpack(c(a-1))}
+                                                                end)
+                                                    end)
+                                                        (
+                                                            (...)[1]
+                                                        ),
+                                                        (...)[1];
+                                                            if(0==(...)[1])then
+                                                                (...)[2]({unpack(a)})
+                                                            else;
+                                                                for h=1,(...)[1]do;
+                                                                    a[h],a[b]=a[b],a[h];
+                                                                    c({(...)[1]-1,(...)[2],a});
+                                                                    a[h],a[b]=a[b],a[h];
+                                                                end;
+                                                            end;
+                                                        end)
+                                        end)
+                                            (
+                                                {
+                                                    c,
+                                                    function(d)
+                                                        e({{d,unpack(b)},c,a})
+                                                    end
+                                                }
+                                            )
+                                        end;
+                                end)
+                            end)
+                        (
+                            {
+                                {},
+                                i,
+                                function(l)
+                                    c={};
+                                        d=k[i][i]..'0'..l[i][i];
+                                        print('testArrays :: ', k[i][i], ' ::: ', l[i][i])
+                                        if d=='101' then
+                                            return;
+                                        else;
+                                            c[d]=true;
+                                    end;
+                                    j=0;
+                                end
+                            }
+                        )
+                    end
+                }
+            );
+    print('testD ::: ', d, ' ::: ', j)
+    return(j+1);
+    end)(k)
+end;
+print(tonumber(s,2));
